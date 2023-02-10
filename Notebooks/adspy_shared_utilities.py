@@ -62,7 +62,7 @@ def plot_labelled_scatter(X, y, class_labels):
     bnorm = BoundaryNorm(numpy.arange(0, num_labels + 1, 1), ncolors=num_labels)
     plt.figure()
 
-    plt.scatter(X[:, 0], X[:, 1], s=65, c=y, cmap=cmap_bold, norm = bnorm, alpha = 0.40, edgecolor='black', lw = 1)
+    plt.scatter(X[:, 0], X[:, 1], s=65, cmap=cmap_bold, norm = bnorm, alpha = 0.40, edgecolor='black', lw = 1)
 
     plt.xlim(x_min, x_max)
     plt.ylim(y_min, y_max)
